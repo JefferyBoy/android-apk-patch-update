@@ -1,0 +1,3 @@
+rootProject.name = "apk-patch"
+include ':app'
+include ':android-apk-patch'

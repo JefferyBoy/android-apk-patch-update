@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增量更新方案：\n1.构建apk时，使用android-apk-diff-plugin插件生成最新版本对于每个旧版本的增量包\n2.服务器下发增量包给app\n3.app中把增量包打入当前包中，生成新apk(需校验md5),执行安装新apk" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="增量包：/sdcard/Android/data/.../cache/diff.apk" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="新    包：/sdcard/Android/data/.../cache/new.apk" />
+
+    <Button
+        android:id="@+id/btn_patch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="合并增量包" />
+
+</LinearLayout>
