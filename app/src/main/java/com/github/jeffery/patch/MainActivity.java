@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         if (diffFile.exists() && installedFile.exists()) {
             boolean success = BsPatch.patch(installedFile.getAbsolutePath(), newFile.getAbsolutePath(), diffFile.getAbsolutePath());
             if (success) {
+                Toast.makeText(this, "合并增量包成功", Toast.LENGTH_SHORT).show();
                 installApk(newFile);
             } else {
                 Toast.makeText(this, "合并增量包失败", Toast.LENGTH_SHORT).show();
