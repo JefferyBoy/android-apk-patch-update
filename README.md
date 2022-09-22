@@ -31,6 +31,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.JefferyBoy:android-apk-patch:1.0.0'
+    implementation 'com.github.JefferyBoy:android-apk-patch-update:1.0.2'
 }
 ```
